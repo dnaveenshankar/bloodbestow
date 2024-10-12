@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bestow - Save Lives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            margin-top: 10px;
+            color: #b30000; /* Blood red */
+        }
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+            color: #333;
+        }
+        .login-register {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #b30000;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #990000;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Blood Bestow Logo">
+        </div>
+        <h1>Blood Bestow</h1>
+        <p class="quote">"A single pint can save three lives, a single gesture can create a million smiles."</p>
+        
+        <div class="login-register">
+            <h2>Donor</h2>
+            <button onclick="location.href='login-donor.php'">Login as Donor</button>
+            <button onclick="location.href='register-donor.php'">Register as Donor</button>
+
+            <h2>Patient</h2>
+            <button onclick="location.href='login-patient.php'">Login as Patient</button>
+            <button onclick="location.href='register-patient.php'">Register as Patient</button>
+        </div>
+
+        <footer>
+            © 2024 Blood Bestow. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
